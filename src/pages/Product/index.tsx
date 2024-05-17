@@ -3,6 +3,8 @@ import Hero from '../../components/Hero'
 import Section from '../../components/Section'
 import Gallery from '../../components/Gallery'
 
+import zelda from '../../assets/images/zelda.png'
+
 const Product = () => {
   const { id } = useParams()
 
@@ -37,7 +39,7 @@ const Product = () => {
         </p>
       </Section>
 
-      <Gallery />
+      <Gallery name="jogo teste" defaultCover={zelda} />
     </>
   )
 }
