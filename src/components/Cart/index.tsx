@@ -1,8 +1,6 @@
 import Button from '../Button'
 import Tag from '../Tag'
 
-import zelda from '../../assets/images/zelda.png'
-
 import {
   Overlay,
   CartContainer,
