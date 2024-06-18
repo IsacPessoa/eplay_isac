@@ -28,7 +28,7 @@ export const Links = style.ul`
 export const LinkItem = style.li`
   margin-right: 16px;
 `
-export const LinkCart = style.a`
+export const CartButton = style.a`
   display: flex;
 
   img {
