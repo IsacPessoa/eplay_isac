@@ -57,7 +57,11 @@ const Cart = () => {
           Total de {formataPreco(getTotalPrice())}{' '}
           <span>Em até 6x sem juros</span>
         </Prices>
-        <Button title="clique aqui para continuar com a compra" type="button">
+        <Button
+          onClick={closeCart}
+          title="clique aqui para continuar com a compra"
+          type="button"
+        >
           Continuar com a compra
         </Button>
       </Sidebar>
