@@ -1,5 +1,11 @@
+import { useDispatch, useSelector } from 'react-redux'
+
 import Button from '../Button'
 import Tag from '../Tag'
+
+import { formataPreco } from '../ProductsList'
+import { RootReducer } from '../../store'
+import { close, remove } from '../../store/reducers/cart'
 
 import {
   Overlay,
@@ -9,11 +15,6 @@ import {
   Quantity,
   CartItem
 } from './styles'
-
-import { useDispatch, useSelector } from 'react-redux'
-import { RootReducer } from '../../store'
-import { close, remove } from '../../store/reducers/cart'
-import { formataPreco } from '../ProductsList'
 
 const Cart = () => {
   const { isOpen, items } = useSelector((state: RootReducer) => state.cart)

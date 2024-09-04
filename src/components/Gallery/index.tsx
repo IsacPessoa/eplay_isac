@@ -3,33 +3,17 @@ import { useState } from 'react'
 import Section from '../Section'
 import { GalleryItem } from '../../pages/Home'
 
-import { Item, Items, Action, Modal, ModalContent } from './styles'
-import hogwarts from '../../assets/images/fundo_hogwarts.png'
-import spiderMan from '../../assets/images/banner-homem-aranha.png'
 import play from '../../assets/images/play.png'
 import zoom from '../../assets/images/zoom.png'
 import close from '../../assets/images/close.png'
+
+import { Item, Items, Action, Modal, ModalContent } from './styles'
 
 type Props = {
   defaultCover: string
   name: string
   items: GalleryItem[]
 }
-
-const mock: GalleryItem[] = [
-  {
-    type: 'image',
-    url: hogwarts
-  },
-  {
-    type: 'image',
-    url: spiderMan
-  },
-  {
-    type: 'video',
-    url: 'https://www.youtube.com/embed/78CP8na1Fpo?si=jPpy-bp_zi6i9QGt'
-  }
-]
 
 interface ModalState extends GalleryItem {
   isVisible: boolean
