@@ -16,6 +16,7 @@ const Button = ({
   to,
   onClick,
   children,
+  disabled,
   variant = 'primary'
 }: Props) => {
   if (type === 'button' || type === 'submit') {
@@ -25,6 +26,7 @@ const Button = ({
         type={type}
         title={title}
         onClick={onClick}
+        disabled={disabled}
       >
         {children}
       </S.ButtonContainer>
